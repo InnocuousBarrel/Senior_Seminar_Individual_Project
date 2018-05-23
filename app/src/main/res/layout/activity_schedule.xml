@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="edu.bridgewatercs.jscott.eagleassistant.Schedule">
+
+    <LinearLayout
+        android:id="@+id/scheduleScreenButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        <Button
+            android:id="@+id/scheduleScreenMainButton"
+            android:text="@string/scheduleScreen_button_home_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"/>
+
+        <TextView
+            android:id="@+id/scheduleScreenNewEventTextView"
+            android:text="@string/scheduleScreen_textView_newEvent_text"
+            android:textAlignment="viewEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"/>
+
+        <Button
+            android:id="@+id/scheduleScreenNewEventButton"
+            android:text="@string/scheduleScreen_button_newEvent_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scheduleScreenListViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/eventScreenListOfEvents"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight=".4"
+            android:scrollbars="none"/>
+        <ListView
+            android:id="@+id/eventScreenListOfEvents1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight=".4"
+            android:scrollbars="none"/>
+        <ListView
+            android:id="@+id/eventScreenListOfEvents2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight=".2"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

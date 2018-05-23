@@ -1,0 +1,160 @@
+<resources>
+    <!-- Major Strings -->
+    <string name="app_name">Eagle Assistant</string>
+    <string name="eagle_assistant_button_ok_text">OK</string>
+    <string name="eagle_assistant_button_cancel_text">Cancel</string>
+
+
+
+
+    <!-- Main Screen Strings -->
+    <string name="mainScreen_text_clock_time_placeholder">Clock-Time</string>
+    <string name="mainScreen_text_clock_date_placeholder">Clock-Date</string>
+    <string name="mainScreen_button_schedule_text">Schedule</string>
+    <string name="mainScreen_button_memo_text">Memo</string>
+    <string name="mainScreen_button_map_text">Map</string>
+    <string name="mainScreen_button_settings_text">Settings</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_app_settings">Settings</string>
+
+
+
+
+    <!-- Schedule Screen Strings -->
+    <string name="scheduleScreen_button_home_text">Home</string>
+    <string name="scheduleScreen_button_newEvent_text">Add</string>
+    <string name="scheduleScreen_textView_newEvent_text">Add new event...</string>
+    <string name="tab_text_1">Today</string>
+    <string name="tab_text_2">Tomorrow</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+
+
+    <!-- New Event Screen Strings -->
+    <string name="newEventScreen_editText_eventName_placeholder">Event Name</string>
+    <string name="newEventScreen_textView_startTime_placeholder">Start Time:</string>
+    <string name="newEventScreen_textView_endTime_placeholder">End Time:</string>
+    <string name="newEventScreen_button_monday">M</string>
+    <string name="newEventScreen_button_tuesday">T</string>
+    <string name="newEventScreen_button_wednesday">W</string>
+    <string name="newEventScreen_button_thursday">R</string>
+    <string name="newEventScreen_button_friday">F</string>
+
+
+
+
+    <!-- Memo Screen Strings -->
+    <string name="memoScreen_button_home_text">Home</string>
+    <string name="memoScreen_button_newMemo_text">Add</string>
+    <string name="memoScreen_textView_newMemo_text">Add new memo...</string>
+
+
+
+
+    <!-- New Memo Screen Strings -->
+    <string name="newMemoScreen_text_clock_time_placeholder">Clock-Time</string>
+    <string name="newMemoScreen_text_clock_date_placeholder">Clock-Date</string>
+    <string name="newMemoScreen_editText_memoSubject_hint">Title</string>
+    <string name="newMemoScreen_editText_memoContent_hint">Body</string>
+
+
+
+
+    <!-- App Settings Screen Strings -->
+    <string name="appSettingsScreen_editText_customColorTitle">Custom Color</string>
+    <string name="appSettingsScreen_editText_customColorDefault">FFFFFF</string>
+    <string-array name="appSettingsScreen_List_Color_Keys">
+        <item>Custom</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Indigo</item>
+        <item>Violet</item>
+    </string-array>
+    <string-array name="appSettingsScreen_List_Color_Values">
+        <item>Custom</item>
+        <item>FFFFFF</item>
+        <item>000000</item>
+        <item>FF0000</item>
+        <item>FF7700</item>
+        <item>FFDD00</item>
+        <item>00FF00</item>
+        <item>0000FF</item>
+        <item>310062</item>
+        <item>4B0082</item>
+    </string-array>
+
+    <!-- User Info -->
+    <string name="appSettingsScreen_textView_userInfo">User Info</string>
+    <string name="appSettingsScreen_editText_userNameTitle">User Name</string>
+    <string name="appSettingsScreen_editText_userNameDefault">Enter Name</string>
+    <string name="appSettingsScreen_List_OccupationTitle">Student Status</string>
+    <string-array name="appSettingsScreen_List_Occupation_Keys">
+        <item>Full-Time Student</item>
+        <item>Part-Time Student</item>
+    </string-array>
+    <string-array name="appSettingsScreen_List_Occupation_Values">
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+    <string name="appSettingsScreen_editText_OccupationTitleMajor">Major</string>
+    <string name="appSettingsScreen_editText_OccupationDefault">Enter Major</string>
+    <string name="appSettingsScreen_editText_BioTitle">Bio</string>
+    <string name="appSettingsScreen_editText_BioDefault">Enter Bio</string>
+
+    <!-- Time and Date Settings -->
+    <string name="appSettingsScreen_textView_timeDateSettings">Time and Date Settings</string>
+    <string name="appSettingsScreen_switch_timeFormatTitle">Time Format</string>
+    <string name="appSettingsScreen_switch_timeFormatSummary">12:00 AM [On] or 12:00:00 AM [Off]</string>
+    <string name="appSettingsScreen_switch_dateFormatTitle">Date Format</string>
+    <string name="appSettingsScreen_switch_dateFormatSummary">1/1/2000 [On] or Jan 1, 2000 [Off]</string>
+
+    <!-- Background Settings -->
+    <string name="appSettingsScreen_textView_backgroundSettings">Background Settings</string>
+    <string name="appSettingsScreen_List_BackgroundTitle">Background</string>
+    <string-array name="appSettingsScreen_List_Background_Keys">
+        <item>Color</item>
+        <item>RGB Clock</item>
+        <item>BC Wallpaper</item>
+    </string-array>
+    <string-array name="appSettingsScreen_List_Background_Values">
+        <item>Color</item>
+        <item>RGB Clock</item>
+        <item>BC Wallpaper</item>
+    </string-array>
+    <string name="appSettingsScreen_List_BackgroundColorTitle">Background Color</string>
+
+    <!-- Text Settings -->
+    <string name="appSettingsScreen_textView_textSettings">Text Settings</string>
+    <string name="appSettingsScreen_List_TextColorTitle">Text Color</string>
+
+    <!-- Button Settings -->
+    <string name="appSettingsScreen_textView_buttonSettings">Button Settings</string>
+    <string name="appSettingsScreen_List_ButtonColorTitle">Button Color</string>
+
+    <!-- Button Text Settings -->
+    <string name="appSettingsScreen_textView_buttonTextSettings">Button Text Settings</string>
+    <string name="appSettingsScreen_List_ButtonTextColorTitle">Button Text Color</string>
+
+    <!-- Map Settings -->
+    <string name="appSettingsScreen_textView_mapSettings">Map Settings</string>
+    <string name="appSettingsScreen_switch_showAcademicBuildingMapMarkersTitle">Show Academic Building Map Markers</string>
+    <string name="appSettingsScreen_switch_showAcademicBuildingMapMarkersSummary">Turn off and on the academic buildings\' map markers</string>
+    <string name="appSettingsScreen_switch_showResidentHallMapMarkersTitle">Show Resident Hall Map Markers</string>
+    <string name="appSettingsScreen_switch_showResidentHallMapMarkersSummary">Turn off and on the resident halls\' map markers</string>
+    <string name="appSettingsScreen_switch_showOtherBuildingMapMarkersTitle">Show Other Building Map Markers</string>
+    <string name="appSettingsScreen_switch_showOtherBuildingMapMarkersSummary">Turn off and on other buildings\' map markers</string>
+
+
+
+
+
+    <!-- Map Screen Strings -->
+    <string name="title_activity_maps">Map</string>
+    <string name="mapScreen_randomString">This is random.</string>
+</resources>

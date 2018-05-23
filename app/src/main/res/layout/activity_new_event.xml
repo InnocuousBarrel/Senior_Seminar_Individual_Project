@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="edu.bridgewatercs.jscott.eagleassistant.NewEvent">
+    <LinearLayout
+        android:id="@+id/newEventScreenLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <EditText
+            android:id="@+id/newEventScreenEditTextEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:ems="10"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:hint="@string/newEventScreen_editText_eventName_placeholder"/>
+
+        <TextView
+            android:id="@+id/newEventScreenTextViewStartTime"
+            android:text="@string/newEventScreen_textView_startTime_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TimePicker
+            android:id="@+id/newEventScreenStartTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/newEventScreenTextViewEndTime"
+            android:text="@string/newEventScreen_textView_endTime_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TimePicker
+            android:id="@+id/newEventScreenEndTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/newEventScreenMondayToggleButton"
+                android:textOn="@string/newEventScreen_button_monday"
+                android:textOff="@string/newEventScreen_button_monday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"/>
+            <ToggleButton
+                android:id="@+id/newEventScreenTuesdayToggleButton"
+                android:textOn="@string/newEventScreen_button_tuesday"
+                android:textOff="@string/newEventScreen_button_tuesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"/>
+
+            <ToggleButton
+                android:id="@+id/newEventScreenWednesdayToggleButton"
+                android:textOn="@string/newEventScreen_button_wednesday"
+                android:textOff="@string/newEventScreen_button_wednesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"/>
+
+            <ToggleButton
+                android:id="@+id/newEventScreenThursdayToggleButton"
+                android:textOn="@string/newEventScreen_button_thursday"
+                android:textOff="@string/newEventScreen_button_thursday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"/>
+
+            <ToggleButton
+                android:id="@+id/newEventScreenFridayToggleButton"
+                android:textOn="@string/newEventScreen_button_friday"
+                android:textOff="@string/newEventScreen_button_friday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/newEventScreenCancelEvent"
+                android:text="@string/eagle_assistant_button_cancel_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"/>
+
+            <Button
+                android:id="@+id/newEventScreenOkEvent"
+                android:text="@string/eagle_assistant_button_ok_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

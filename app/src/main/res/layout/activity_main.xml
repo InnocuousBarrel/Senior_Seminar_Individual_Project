@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="edu.bridgewatercs.jscott.eagleassistant.MainActivity">
+
+
+    <TextClock
+        android:id="@+id/mainScreenTextClockTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textSize="60sp"
+        android:text="@string/mainScreen_text_clock_time_placeholder"/>
+
+    <TextClock
+        android:id="@+id/mainScreenTextClockDate"
+        android:format12Hour="MM/dd/yyyy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textSize="45sp"
+        android:text="@string/mainScreen_text_clock_date_placeholder"/>
+
+    <LinearLayout
+        android:id="@+id/mainScreenButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mainScreenScheduleButton"
+            android:text="@string/mainScreen_button_schedule_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:id="@+id/mainScreenMemoButton"
+            android:text="@string/mainScreen_button_memo_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:id="@+id/mainScreenMapButton"
+            android:text="@string/mainScreen_button_map_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:id="@+id/mainScreenSettingsButton"
+            android:text="@string/mainScreen_button_settings_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>

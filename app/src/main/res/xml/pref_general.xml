@@ -1,0 +1,199 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- User Info -->
+    <PreferenceCategory
+        android:title="@string/appSettingsScreen_textView_userInfo">
+
+        <EditTextPreference
+            android:key="appSettingsScreenEditTextUserName"
+            android:title="@string/appSettingsScreen_editText_userNameTitle"
+            android:defaultValue="@string/appSettingsScreen_editText_userNameDefault"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"/>
+
+        <ListPreference
+            android:key="appSettingsScreenListOccupation"
+            android:title="@string/appSettingsScreen_List_OccupationTitle"
+            android:defaultValue="1"
+            android:entries="@array/appSettingsScreen_List_Occupation_Keys"
+            android:entryValues="@array/appSettingsScreen_List_Occupation_Values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+
+        <EditTextPreference
+            android:key="appSettingsScreenEditTextOccupation"
+            android:title="@string/appSettingsScreen_editText_OccupationTitleMajor"
+            android:defaultValue="@string/appSettingsScreen_editText_OccupationDefault"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"/>
+
+        <EditTextPreference
+            android:key="appSettingsScreenEditTextBio"
+            android:title="@string/appSettingsScreen_editText_BioTitle"
+            android:defaultValue="@string/appSettingsScreen_editText_BioDefault"
+            android:inputType="textCapSentences|textMultiLine"
+            android:selectAllOnFocus="true"/>
+
+    </PreferenceCategory>
+
+
+
+    <!-- Time and Date Settings -->
+    <PreferenceCategory
+        android:title="@string/appSettingsScreen_textView_timeDateSettings">
+
+        <SwitchPreference
+            android:key="appSettingsScreenSwitchTimeFormat"
+            android:title="@string/appSettingsScreen_switch_timeFormatTitle"
+            android:summary="@string/appSettingsScreen_switch_timeFormatSummary"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="appSettingsScreenSwitchDateFormat"
+            android:title="@string/appSettingsScreen_switch_dateFormatTitle"
+            android:summary="@string/appSettingsScreen_switch_dateFormatSummary"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+
+
+    <!-- Background Settings -->
+    <PreferenceCategory
+        android:title="@string/appSettingsScreen_textView_backgroundSettings">
+
+        <ListPreference
+            android:key="appSettingsScreenListBackground"
+            android:title="@string/appSettingsScreen_List_BackgroundTitle"
+            android:defaultValue="BC Wallpaper"
+            android:entries="@array/appSettingsScreen_List_Background_Keys"
+            android:entryValues="@array/appSettingsScreen_List_Background_Values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+
+        <ListPreference
+            android:key="appSettingsScreenListBackgroundColor"
+            android:title="@string/appSettingsScreen_List_BackgroundColorTitle"
+            android:defaultValue="FFFFFF"
+            android:entries="@array/appSettingsScreen_List_Color_Keys"
+            android:entryValues="@array/appSettingsScreen_List_Color_Values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+
+        <EditTextPreference
+            android:key="appSettingsScreenEditTextCustomBackgroundColor"
+            android:title="@string/appSettingsScreen_editText_customColorTitle"
+            android:defaultValue="FFFFFF"
+            android:capitalize="characters"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"/>
+
+    </PreferenceCategory>
+
+
+
+    <!-- Text Settings -->
+    <PreferenceCategory
+        android:title="@string/appSettingsScreen_textView_textSettings">
+
+        <ListPreference
+            android:key="appSettingsScreenListTextColor"
+            android:title="@string/appSettingsScreen_List_TextColorTitle"
+            android:defaultValue="Custom"
+            android:entries="@array/appSettingsScreen_List_Color_Keys"
+            android:entryValues="@array/appSettingsScreen_List_Color_Values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+
+        <EditTextPreference
+            android:key="appSettingsScreenEditTextCustomTextColor"
+            android:title="@string/appSettingsScreen_editText_customColorTitle"
+            android:defaultValue="D7C5A1"
+            android:capitalize="characters"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"/>
+
+    </PreferenceCategory>
+
+
+
+    <!-- Button Settings -->
+    <PreferenceCategory
+        android:title="@string/appSettingsScreen_textView_buttonSettings">
+
+        <ListPreference
+            android:key="appSettingsScreenListButtonColor"
+            android:title="@string/appSettingsScreen_List_ButtonColorTitle"
+            android:defaultValue="Custom"
+            android:entries="@array/appSettingsScreen_List_Color_Keys"
+            android:entryValues="@array/appSettingsScreen_List_Color_Values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+
+        <EditTextPreference
+            android:key="appSettingsScreenEditTextCustomButtonColor"
+            android:title="@string/appSettingsScreen_editText_customColorTitle"
+            android:defaultValue="D7C5A1"
+            android:capitalize="characters"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"/>
+
+    </PreferenceCategory>
+
+
+
+    <!-- Button Text Settings -->
+    <PreferenceCategory
+        android:title="@string/appSettingsScreen_textView_buttonTextSettings">
+
+        <ListPreference
+            android:key="appSettingsScreenListButtonTextColor"
+            android:title="@string/appSettingsScreen_List_ButtonTextColorTitle"
+            android:defaultValue="Custom"
+            android:entries="@array/appSettingsScreen_List_Color_Keys"
+            android:entryValues="@array/appSettingsScreen_List_Color_Values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+
+        <EditTextPreference
+            android:key="appSettingsScreenEditTextCustomButtonTextColor"
+            android:title="@string/appSettingsScreen_editText_customColorTitle"
+            android:defaultValue="B3093A"
+            android:capitalize="characters"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/appSettingsScreen_textView_mapSettings">
+
+        <SwitchPreference
+            android:key="appSettingsScreenSwitchShowAcademicBuildingMapMarkers"
+            android:title="@string/appSettingsScreen_switch_showAcademicBuildingMapMarkersTitle"
+            android:summary="@string/appSettingsScreen_switch_showAcademicBuildingMapMarkersSummary"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="appSettingsScreenSwitchShowResidentHallMapMarkers"
+            android:title="@string/appSettingsScreen_switch_showResidentHallMapMarkersTitle"
+            android:summary="@string/appSettingsScreen_switch_showResidentHallMapMarkersSummary"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="appSettingsScreenSwitchShowOtherBuildingMapMarkers"
+            android:title="@string/appSettingsScreen_switch_showOtherBuildingMapMarkersTitle"
+            android:summary="@string/appSettingsScreen_switch_showOtherBuildingMapMarkersSummary"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

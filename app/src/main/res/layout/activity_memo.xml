@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.bridgewatercs.jscott.eagleassistant.Memo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/memoScreenMainButton"
+            android:text="@string/memoScreen_button_home_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"/>
+
+        <TextView
+            android:id="@+id/memoScreenNewMemoTextView"
+            android:text="@string/memoScreen_textView_newMemo_text"
+            android:textAlignment="viewEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"/>
+
+        <Button
+            android:id="@+id/memoScreenNewMemoButton"
+            android:text="@string/memoScreen_button_newMemo_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/memoScreenListOfMemos"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="fill_vertical"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.bridgewatercs.jscott.eagleassistant.NewMemo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:id="@+id/newMemoScreenTextClockTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:format12Hour="hh:mm:ss a"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="@string/newMemoScreen_text_clock_time_placeholder"/>
+
+        <TextClock
+            android:id="@+id/newMemoScreenTextClockDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:format12Hour="MM/dd/yyyy"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="@string/newMemoScreen_text_clock_date_placeholder"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/newMemoScreenEditTextSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="@string/newMemoScreen_editText_memoSubject_hint"
+        android:inputType="textCapWords"
+        android:textSize="45sp"/>
+
+    <EditText
+        android:id="@+id/newMemoScreenEditTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="top|start"
+        android:hint="@string/newMemoScreen_editText_memoContent_hint"
+        android:inputType="textCapSentences|textMultiLine"
+        android:scrollHorizontally="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newMemoScreenCancelMemo"
+            android:text="@string/eagle_assistant_button_cancel_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"/>
+
+        <Button
+            android:id="@+id/newMemoScreenOkMemo"
+            android:text="@string/eagle_assistant_button_ok_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"/>
+    </LinearLayout>
+
+
+</LinearLayout>
